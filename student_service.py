@@ -26,3 +26,11 @@ class StudentService(object):
  if s["grade"] > top["grade"]:
     op = s
  return top
+
+def average_grade(self):
+ if len(self.students) == 0:
+ return None
+ total = 0
+ for s in self.students:
+ total += s["grade"]
+ return total / len(self.students)
