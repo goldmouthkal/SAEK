@@ -34,3 +34,13 @@ def average_grade(self):
  for s in self.students:
  total += s["grade"]
  return total / len(self.students)
+
+def top_student(self):
+[8]
+if len(self.students) == 0:
+return None
+top = self.students[0]
+for s in self.students:
+if s["grade"] > top["grade"]:
+top = s
+return top
